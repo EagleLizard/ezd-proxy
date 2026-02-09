@@ -1,4 +1,4 @@
-FROM nginx:latest AS base
+FROM nginx:stable AS base
 
 ARG EZD_HOST
 

@@ -1,0 +1,14 @@
+{
+    # Global options
+    auto_https off  # Since you're only using HTTP (port 80)
+    debug
+}
+
+{$EZD_HOST}:80 {
+    handle_path /hooks/* {
+        reverse_proxy ezd-internal:4440
+    }
+    handle_path /ezd/* {
+        reverse_proxy ezd-internal:4446
+    }
+}
