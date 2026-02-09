@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 
 scripts_dir=$(realpath "$(dirname $0)")
 source $scripts_dir/vars.sh
